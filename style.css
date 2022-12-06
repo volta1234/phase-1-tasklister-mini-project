@@ -1,37 +1,59 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif ;
 }
-
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+    background-color: rgb(181, 190, 181);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
 }
-
-button {
-  font-size: 7px;
+.tittle {
+    font-size: 40px;
+    font-weight: 10000;
+    color: rgb(10, 7, 140);
+    letter-spacing: 1px;
+    margin: 30px 0;
+    text-shadow: rgba(255, 255, 255, 0.9);
 }
-
-#main-content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+.list {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    background-color:#fff ;
 }
+.head {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 40px;
+}
+.entry {
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid rgb(93, 35, 35);
+}
+.addList {
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+}
+.tasks {
+    width: 100%;
+    margin-top: 30px;
+}
+.items {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+    font-display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
